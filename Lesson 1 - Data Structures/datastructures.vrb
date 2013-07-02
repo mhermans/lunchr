@@ -1,0 +1,24 @@
+\frametitle{Niet zomaar een dataset variabele}
+
+Onze numerieke vector...
+\begin{Schunk}
+\begin{Sinput}
+> print(numeric.v)
+\end{Sinput}
+\begin{Soutput}
+[1]  0.2  6.1  9.3 -4.4  6.7
+\end{Soutput}
+\end{Schunk}
+\vspace{20pt}
+... kan als basis dienen voor een logische vector:
+\begin{Schunk}
+\begin{Sinput}
+> x <- numeric.v > 0
+> print(x)
+\end{Sinput}
+\begin{Soutput}
+[1]  TRUE  TRUE  TRUE FALSE  TRUE
+\end{Soutput}
+\end{Schunk}
+
+

@@ -1,0 +1,30 @@
+\beamer@endinputifotherversion {3.26pt}
+\headcommand {\sectionentry {1}{Voorbereiding}{1}{Voorbereiding}{0}}
+\headcommand {\beamer@sectionpages {1}{0}}
+\headcommand {\beamer@subsectionpages {1}{0}}
+\headcommand {\slideentry {1}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\sectionentry {2}{Inleiding}{2}{Inleiding}{0}}
+\headcommand {\beamer@sectionpages {1}{1}}
+\headcommand {\beamer@subsectionpages {1}{1}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{2}{Motivatie}}\headcommand {\beamer@subsectionpages {2}{1}}
+\headcommand {\slideentry {2}{1}{1}{2/8}{Motivatie}{0}}
+\headcommand {\beamer@framepages {2}{8}}
+\headcommand {\sectionentry {3}{Datastructuren in R}{9}{Datastructuren in R}{0}}
+\headcommand {\beamer@sectionpages {2}{8}}
+\headcommand {\beamer@subsectionpages {2}{8}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{9}{Overzicht datastructuren}}\headcommand {\beamer@subsectionpages {9}{8}}
+\headcommand {\slideentry {3}{1}{1}{9/9}{Overzicht datastructuren}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{10}{Vectoren}}\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {3}{2}{1}{10/10}{Vectoren}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {3}{2}{2}{11/11}{Vectoren}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {3}{2}{3}{12/12}{Vectoren}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@partpages {1}{12}}
+\headcommand {\beamer@subsectionpages {10}{12}}
+\headcommand {\beamer@sectionpages {9}{12}}
+\headcommand {\beamer@documentpages {12}}
+\headcommand {\def \inserttotalframenumber {6}}

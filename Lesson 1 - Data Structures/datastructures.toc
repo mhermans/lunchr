@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.26pt}
+\beamer@sectionintoc {1}{Voorbereiding}{1}{0}{1}
+\beamer@sectionintoc {2}{Inleiding}{2}{0}{2}
+\beamer@subsectionintoc {2}{1}{Motivatie}{2}{0}{2}
+\beamer@sectionintoc {3}{Datastructuren in R}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Overzicht datastructuren}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Vectoren}{10}{0}{3}

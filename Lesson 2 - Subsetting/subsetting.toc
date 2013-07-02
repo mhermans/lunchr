@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.24pt}
+\beamer@sectionintoc {1}{Inleiding}{1}{0}{1}
+\beamer@subsectionintoc {1}{1}{Doelstellingen}{1}{0}{1}

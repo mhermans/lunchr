@@ -1,0 +1,154 @@
+\documentclass{beamer}
+\usetheme{Warsaw}
+
+\setbeamercovered{dynamic}
+\begin{document}
+\SweaveOpts{concordance=FALSE}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 0
+
+\section{Voorbereiding}
+
+\begin{frame}{R Studio}
+
+\begin{itemize}
+    \item R Studio: omgeving voor "ruwe" R (IDE)
+    \item http://www.rstudio.com/
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 1
+
+\section{Inleiding}
+\subsection{Motivatie}
+\begin{frame}{Inleiding}
+
+\begin{itemize}
+    \item<1-> Waarom is R interessant? 
+    \item<2-> R vs SAS
+        \begin{itemize}
+        \item<3-> In principe kunnen ze hetzelfde, maar... 
+        \item<4-> In R kan je functies combineren, in SAS niet (= enorme flexibiliteit)
+        
+        % Voorbeeld geven? 
+        
+        \item<5-> Uitstekende grafische mogelijkheden (wordt zeker een topic)
+        
+        % Ook hier een voorbeeld?
+        
+        \end{itemize}
+    \item<6-> R wordt een belangrijke tool, vooral binnen de wetenschap
+    \item<7-> Leuke extratjes (rapporten, presentaties... )
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 2
+
+\section{Datastructuren in R}
+
+\subsection{Overzicht datastructuren}
+
+\begin{frame}{Overzicht}
+
+R heeft meerdere data structuren: 
+
+\begin{itemize}
+  \item Vector
+  \item Matrix \& Array
+  \item List
+  \item Data frame (cfr SAS \& SPSS)
+  \item Factor \& table
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 3
+
+\subsection{Vectoren}
+
+\begin{frame}{Definitie en types}
+
+\begin{itemize}
+  \item Vector: set van elementen van dezelfde soort (\textit{mode}, type variabele)
+  \item Belangrijkste datasoorten: 
+  
+    \begin{itemize}
+    \item Integer
+    \item Numeric 
+    \item Logical (Boolean)
+    \item Character
+    \end{itemize}
+  \item Vergelijkbaar met een SAS-variabele, maar veel ruimer gebruik!
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 4
+
+
+\begin{frame}[fragile]{Voorbeelden vectoren}
+
+
+<<vector-example1-setup,echo=FALSE>>=
+
+# Numeric vector
+set.seed(1234)
+numeric.v <- round(rnorm(5,mean=5,sd=4),1)
+character.v <- c("een","twee","spaties ook")
+boolean.v <- c(TRUE,FALSE,FALSE,TRUE)
+@
+
+\begin{itemize}
+
+\item
+Voorbeeld \textit{numeric vector}
+<<vector-example1-render-numeric,echo=FALSE>>=
+print(numeric.v)
+@
+\vspace{30pt}
+\item
+Voorbeeld \textit{character vector}
+<<vector-example1-render-char,echo=FALSE>>=
+print(character.v)
+@
+\vspace{30pt}
+\item
+Voorbeeld \textit{boolean vector}
+<<vector-example1-render-boolean,echo=FALSE>>=
+print(boolean.v)
+@
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 5
+
+\begin{frame}[fragile]{Niet zomaar een dataset variabele}
+
+Onze numerieke vector... 
+<<vector-example2-render-numeric,echo=TRUE>>=
+print(numeric.v)
+@
+\vspace{20pt}
+... kan als basis dienen voor een logische vector: 
+<<vector-example2-render-numeric,echo=TRUE>>=
+x <- (numeric.v > 0)
+print(x)
+@
+
+
+\end{frame}
+
+
+\end{document}

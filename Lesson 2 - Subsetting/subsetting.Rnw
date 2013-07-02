@@ -1,0 +1,24 @@
+\documentclass{beamer}
+\usetheme{PaloAlto}
+
+
+\begin{document}
+\SweaveOpts{concordance=FALSE}
+
+
+\section{Inleiding}
+\subsection{Doelstellingen}
+\begin{frame}{Inleiding}
+
+\begin{itemize}
+    \item Waarom data types belangrijk?
+    \item Planning
+\end{itemize}
+
+
+
+
+\end{frame}
+
+
+\end{document}
