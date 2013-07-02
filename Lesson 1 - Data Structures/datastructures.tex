@@ -148,7 +148,7 @@ Onze numerieke vector...
 ... kan als basis dienen voor een logische vector: 
 \begin{Schunk}
 \begin{Sinput}
-> x <- numeric.v > 0
+> x <- (numeric.v > 0)
 > print(x)
 \end{Sinput}
 \begin{Soutput}
@@ -159,5 +159,145 @@ Onze numerieke vector...
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 6
+
+
+\begin{frame}[fragile]{Vectorelementen toevoegen en verwijderen}
+\begin{Schunk}
+\begin{Sinput}
+> x <- c(5,3,7,9)
+> length(x)
+\end{Sinput}
+\begin{Soutput}
+[1] 4
+\end{Soutput}
+\begin{Sinput}
+> print(x)
+\end{Sinput}
+\begin{Soutput}
+[1] 5 3 7 9
+\end{Soutput}
+\begin{Sinput}
+> x <- c(x,11)
+> print(x)
+\end{Sinput}
+\begin{Soutput}
+[1]  5  3  7  9 11
+\end{Soutput}
+\begin{Sinput}
+> y <- x[1:2]
+> print(y)
+\end{Sinput}
+\begin{Soutput}
+[1] 5 3
+\end{Soutput}
+\end{Schunk}
+
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 7
+
+\begin{frame}[fragile]{Vectorelementen toevoegen en verwijderen}
+\begin{Schunk}
+\begin{Sinput}
+> print(x)
+\end{Sinput}
+\begin{Soutput}
+[1]  5  3  7  9 11
+\end{Soutput}
+\begin{Sinput}
+> y <- c(x[1:2], 20, x[3:5])
+> print(y)
+\end{Sinput}
+\begin{Soutput}
+[1]  5  3 20  7  9 11
+\end{Soutput}
+\end{Schunk}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 8
+
+\begin{frame}[fragile]{Vectorelementen vervangen}
+\begin{Schunk}
+\begin{Sinput}
+> print(x)
+\end{Sinput}
+\begin{Soutput}
+[1]  5  3  7  9 11
+\end{Soutput}
+\begin{Sinput}
+> x[2] <- 13
+> print(x)
+\end{Sinput}
+\begin{Soutput}
+[1]  5 13  7  9 11
+\end{Soutput}
+\end{Schunk}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 8
+
+\begin{frame}[fragile]{Operaties}
+\begin{Schunk}
+\begin{Sinput}
+> x <- c(1,2,7)
+> x + 1 
+\end{Sinput}
+\begin{Soutput}
+[1] 2 3 8
+\end{Soutput}
+\begin{Sinput}
+> x*2
+\end{Sinput}
+\begin{Soutput}
+[1]  2  4 14
+\end{Soutput}
+\end{Schunk}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 9
+
+\begin{frame}[fragile]{Operaties}
+\begin{Schunk}
+\begin{Sinput}
+> x <- c(1,2,7)
+> y <- c(3,5,11)
+> x+y
+\end{Sinput}
+\begin{Soutput}
+[1]  4  7 18
+\end{Soutput}
+\end{Schunk}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 9
+
+\begin{frame}[fragile]{Recycling}
+\begin{Schunk}
+\begin{Sinput}
+> x <- c(1,2,7)
+> y <- c(3,5)
+> x+y
+\end{Sinput}
+\begin{Soutput}
+[1]  4  7 10
+\end{Soutput}
+\end{Schunk}
+
+\end{frame}
 
 \end{document}

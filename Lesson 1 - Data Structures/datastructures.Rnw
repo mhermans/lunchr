@@ -150,5 +150,87 @@ print(x)
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 6
+
+
+\begin{frame}[fragile]{Vectorelementen toevoegen en verwijderen}
+<<vector-insert-delete,echo=TRUE>>=
+x <- c(5,3,7,9)
+length(x)
+print(x)
+
+x <- c(x,11)
+print(x)
+
+y <- x[1:2]
+print(y)
+@
+
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 7
+
+\begin{frame}[fragile]{Vectorelementen toevoegen en verwijderen}
+<<vector-insert-delete2,echo=TRUE>>=
+print(x)
+y <- c(x[1:2], 20, x[3:5])
+print(y)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 8
+
+\begin{frame}[fragile]{Vectorelementen vervangen}
+<<vector-replace,echo=TRUE>>=
+print(x)
+x[2] <- 13
+print(x)
+@
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 8
+
+\begin{frame}[fragile]{Operaties}
+<<vector-operations,echo=TRUE>>=
+x <- c(1,2,7)
+x + 1 
+x*2
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 9
+
+\begin{frame}[fragile]{Operaties}
+<<vector-operations,echo=TRUE>>=
+x <- c(1,2,7)
+y <- c(3,5,11)
+x+y
+@
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SLIDE 9
+
+\begin{frame}[fragile]{Recycling}
+<<vector-operations,echo=TRUE>>=
+x <- c(1,2,7)
+y <- c(3,5)
+x+y
+@
+
+\end{frame}
 
 \end{document}

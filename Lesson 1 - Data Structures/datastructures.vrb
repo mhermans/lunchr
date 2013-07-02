@@ -1,24 +1,12 @@
-\frametitle{Niet zomaar een dataset variabele}
-
-Onze numerieke vector...
+\frametitle{Recycling}
 \begin{Schunk}
 \begin{Sinput}
-> print(numeric.v)
+> x <- c(1,2,7)
+> y <- c(3,5)
+> x+y
 \end{Sinput}
 \begin{Soutput}
-[1]  0.2  6.1  9.3 -4.4  6.7
+[1]  4  7 10
 \end{Soutput}
 \end{Schunk}
-\vspace{20pt}
-... kan als basis dienen voor een logische vector:
-\begin{Schunk}
-\begin{Sinput}
-> x <- numeric.v > 0
-> print(x)
-\end{Sinput}
-\begin{Soutput}
-[1]  TRUE  TRUE  TRUE FALSE  TRUE
-\end{Soutput}
-\end{Schunk}
-
 
